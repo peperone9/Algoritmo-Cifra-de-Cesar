@@ -46,7 +46,7 @@ namespace Sistema_Pastelaria
         
         static int Erro(int var, int qntmin, int qntmax)
         {
-            while (!(int.TryParse(Console.ReadLine(), out var) && (qntmin >= 1 && qntmax <= 26)))
+            while (!(int.TryParse(Console.ReadLine(), out var) && (var >= qntmin && var <= qntmax)))
             {
                 Console.Write("Opção INVÁLIDA !! Digite uma numeração válida de {0} a {1}: ", qntmin, qntmax);
             }
